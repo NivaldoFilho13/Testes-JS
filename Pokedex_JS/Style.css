@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #202020;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.75),
+            rgba(20, 20, 20, 0.75)
+        ),
+        linear-gradient(
+            135deg,
+            #e33535,
+            #ffcc00
+        );
+}
+
+.hero-conteudo {
+    max-width: 800px;
+    padding: 30px;
+}
+
+.hero-conteudo span {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+.botao,
+button {
+    background: #e33535;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao:hover,
+button:hover {
+    background: #b82020;
+
+    transform: translateY(-2px);
+}
+
+.secao {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 90px 30px;
+}
+
+.fundo {
+    max-width: none;
+
+    background: #eeeeee;
+}
+
+.titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.titulo span {
+    background: #e33535;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.titulo h2 {
+    font-size: 38px;
+}
+
+.descricao {
+    margin-bottom: 40px;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+.sobre-conteudo {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 40px;
+}
+
+.sobre-conteudo p {
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.destaque {
+    background: #202020;
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+.destaque h3 {
+    color: #ffcc00;
+
+    margin-bottom: 15px;
+}
+
+.cards {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+}
+
+.pokemon-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-10px);
+}
+
+.pokemon-numero {
+    text-align: right;
+
+    color: #999;
+
+    font-weight: bold;
+}
+
+.pokemon-icon {
+    font-size: 70px;
+
+    margin: 15px;
+}
+
+.pokemon-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.pokemon-card p {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin: 18px 0;
+}
+
+.tipo {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.eletrico {
+    background: #d8ad00;
+}
+
+.fogo {
+    background: #e4572e;
+}
+
+.planta {
+    background: #4caf50;
+}
+
+.agua {
+    background: #3786d6;
+}
+
+
+.tipos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 20px;
+}
+
+.tipo-card {
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 35px;
+
+    transition: 0.3s;
+}
+
+.tipo-card:hover {
+    transform: scale(1.05);
+}
+
+.tipo-card h3 {
+    font-size: 18px;
+
+    margin-top: 10px;
+}
+
+.eletrico-bg {
+    background: #d8ad00;
+}
+
+.fogo-bg {
+    background: #e4572e;
+}
+
+.agua-bg {
+    background: #3786d6;
+}
+
+.planta-bg {
+    background: #4caf50;
+}
+
+.psiquico-bg {
+    background: #9c4dcc;
+}
+
+.noturno-bg {
+    background: #353535;
+}
+
+.treinador {
+    text-align: center;
+}
+
+.treinador .titulo {
+    justify-content: center;
+}
+
+.treinador > p {
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.formulario input {
+    width: 300px;
+
+    padding: 13px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+#mensagemTreinador {
+    margin-top: 30px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #e33535;
+}
+
+footer {
+    background: #202020;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+footer h2 {
+    color: #ffcc00;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #bbb;
+}
+
+.links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 25px 0;
+}
+
+.links a {
+    color: white;
+
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #ffcc00;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+@media (max-width: 750px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .formulario input {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>⚡ Pokédex</h1>
+            <div class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#pokemon">Pokémon</a>
+                <a href="#tipos">Tipos</a>
+                <a href="#treinador">Treinador</a>
+            </div>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-conteudo">
+            <span>🔴 GUIA POKÉMON</span>
+            <h2>Explore o mundo Pokémon</h2>
+            <p>
+                Conheça alguns dos Pokémon mais conhecidos,
+                descubra seus tipos e comece sua jornada
+                como um verdadeiro treinador.
+            </p>
+            <a href="#pokemon" class="botao">
+                Explorar Pokémon
+            </a>
+        </div>
+    </section>
+    <section id="sobre" class="secao">
+        <div class="titulo">
+            <span>01</span>
+            <h2>O que é Pokémon?</h2>
+        </div>
+        <div class="sobre-conteudo">
+            <div>
+                <p>
+                    Pokémon é uma franquia criada no Japão que
+                    envolve criaturas chamadas Pokémon e os
+                    treinadores que as capturam e treinam.
+                </p>
+                <p>
+                    Os treinadores podem viajar pelo mundo,
+                    participar de batalhas, capturar novos Pokémon
+                    e formar equipes para enfrentar diferentes
+                    desafios.
+                </p>
+            </div>
+            <div class="destaque">
+                <h3>🎯 Objetivo</h3>
+                <p>
+                    Montar uma equipe, treinar seus Pokémon
+                    e enfrentar desafios para se tornar
+                    um grande treinador.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="pokemon" class="secao fundo">
+        <div class="titulo">
+            <span>02</span>
+            <h2>Pokémon populares</h2>
+        </div>
+        <p class="descricao">
+            Confira alguns Pokémon conhecidos e suas
+            principais características.
+        </p>
+        <div class="cards">
+            <div class="pokemon-card">
+                <div class="pokemon-numero">
+                    #025
+                </div>
+                <div class="pokemon-icon">
+                    ⚡
+                </div>
+                <h3>Pikachu</h3>
+                <span class="tipo eletrico">
+                    Elétrico
+                </span>
+                <p>
+                    Um Pokémon conhecido por armazenar
+                    eletricidade em suas bochechas.
+                </p>
+                <button onclick="mostrarPokemon('Pikachu')">
+                    Ver detalhes
+                </button>
+            </div>
+            <div class="pokemon-card">
+                <div class="pokemon-numero">
+                    #006
+                </div>
+                <div class="pokemon-icon">
+                    🔥
+                </div>
+                <h3>Charizard</h3>
+                <span class="tipo fogo">
+                    Fogo / Voador
+                </span>
+                <p>
+                    Um Pokémon poderoso capaz de voar
+                    e utilizar ataques de fogo.
+                </p>
+                <button onclick="mostrarPokemon('Charizard')">
+                    Ver detalhes
+                </button>
+            </div>
+            <div class="pokemon-card">
+                <div class="pokemon-numero">
+                    #001
+                </div>
+                <div class="pokemon-icon">
+                    🌱
+                </div>
+                <h3>Bulbasaur</h3>
+                <span class="tipo planta">
+                    Planta / Veneno
+                </span>
+                <p>
+                    Um Pokémon que possui uma semente
+                    plantada em suas costas.
+                </p>
+                <button onclick="mostrarPokemon('Bulbasaur')">
+                    Ver detalhes
+                </button>
+            </div>
+            <div class="pokemon-card">
+                <div class="pokemon-numero">
+                    #007
+                </div>
+                <div class="pokemon-icon">
+                    💧
+                </div>
+                <h3>Squirtle</h3>
+                <span class="tipo agua">
+                    Água
+                </span>
+                <p>
+                    Um Pokémon aquático conhecido
+                    por utilizar sua carapaça.
+                </p>
+                <button onclick="mostrarPokemon('Squirtle')">
+                    Ver detalhes
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="tipos" class="secao">
+        <div class="titulo">
+            <span>03</span>
+            <h2>Tipos Pokémon</h2>
+        </div>
+        <p class="descricao">
+            Os Pokémon possuem diferentes tipos,
+            que influenciam suas habilidades e batalhas.
+        </p>
+        <div class="tipos">
+            <div class="tipo-card eletrico-bg">
+                ⚡
+                <h3>Elétrico</h3>
+            </div>
+            <div class="tipo-card fogo-bg">
+                🔥
+                <h3>Fogo</h3>
+            </div>
+            <div class="tipo-card agua-bg">
+                💧
+                <h3>Água</h3>
+            </div>
+            <div class="tipo-card planta-bg">
+                🌱
+                <h3>Planta</h3>
+            </div>
+            <div class="tipo-card psiquico-bg">
+                🔮
+                <h3>Psíquico</h3>
+            </div>
+            <div class="tipo-card noturno-bg">
+                🌙
+                <h3>Noturno</h3>
+            </div>
+        </div>
+    </section>
+    <section id="treinador" class="secao treinador">
+        <div class="titulo">
+            <span>04</span>
+            <h2>Crie seu treinador</h2>
+        </div>
+        <p>
+            Escolha um nome para seu treinador Pokémon.
+        </p>
+        <div class="formulario">
+            <input
+                type="text"
+                id="nomeTreinador"
+                placeholder="Digite seu nome"
+            >
+            <button onclick="criarTreinador()">
+                Começar jornada
+            </button>
+        </div>
+        <div id="mensagemTreinador"></div>
+    </section>
+    <footer>
+        <h2>⚡ Pokédex</h2>
+        <p>
+            Um pequeno projeto desenvolvido com
+            HTML, CSS e JavaScript.
+        </p>
+        <div class="links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#pokemon">Pokémon</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#treinador">Treinador</a>
+        </div>
+        <p class="copyright">
+            © 2026 - Projeto educacional
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
