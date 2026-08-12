@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man | Universo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>🕷️ SPIDER-MAN</h1>
+            <div class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#historia">História</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#poderes">Poderes</a>
+                <a href="#quiz">Quiz</a>
+            </div>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-conteudo">
+            <p class="subtitulo">
+                UM DOS MAIORES HERÓIS DA MARVEL
+            </p>
+            <h2>
+                Com grandes poderes vêm grandes responsabilidades.
+            </h2>
+            <p>
+                Conheça a história, os poderes, os personagens
+                e algumas das versões mais famosas do
+                Homem-Aranha.
+            </p>
+            <a href="#historia" class="botao">
+                Conhecer a história
+            </a>
+        </div>
+    </section>
+    <section id="historia" class="secao">
+        <div class="titulo">
+            <span>01</span>
+            <h2>A História do Homem-Aranha</h2>
+        </div>
+        <div class="historia-grid">
+            <div>
+                <p>
+                    O Homem-Aranha é um dos personagens mais
+                    conhecidos dos quadrinhos. Sua primeira
+                    aparição aconteceu em 1962, na revista
+                    Amazing Fantasy #15.
+                </p>
+                <p>
+                    O personagem é conhecido principalmente
+                    como Peter Parker, um jovem que ganha
+                    habilidades especiais depois de ser picado
+                    por uma aranha radioativa.
+                </p>
+                <p>
+                    Depois de receber seus poderes, Peter
+                    aprende que possuir habilidades extraordinárias
+                    também significa ter responsabilidades.
+                </p>
+            </div>
+            <div class="frase">
+                <span>🕷️</span>
+                <h3>
+                    "Grandes poderes trazem
+                    grandes responsabilidades."
+                </h3>
+                <p>
+                    Uma das ideias mais importantes
+                    associadas ao personagem.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="personagens" class="secao fundo">
+        <div class="titulo">
+            <span>02</span>
+            <h2>Personagens</h2>
+        </div>
+        <p class="descricao">
+            Conheça alguns dos personagens importantes
+            relacionados ao universo do Homem-Aranha.
+        </p>
+        <div class="personagens">
+            <div class="personagem">
+                <div class="icone">
+                    🕷️
+                </div>
+                <div class="personagem-info">
+                    <h3>Peter Parker</h3>
+                    <span>Homem-Aranha</span>
+                    <p>
+                        Um jovem estudante que recebe
+                        habilidades especiais e decide
+                        utilizá-las para ajudar outras pessoas.
+                    </p>
+                    <button onclick="mostrarPersonagem('Peter')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+            <div class="personagem">
+                <div class="icone">
+                    🕸️
+                </div>
+                <div class="personagem-info">
+                    <h3>Miles Morales</h3>
+                    <span>Homem-Aranha</span>
+                    <p>
+                        Um jovem que também assume o manto
+                        do Homem-Aranha e desenvolve
+                        habilidades próprias.
+                    </p>
+                    <button onclick="mostrarPersonagem('Miles')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+            <div class="personagem">
+                <div class="icone">
+                    ❤️
+                </div>
+                <div class="personagem-info">
+                    <h3>Mary Jane</h3>
+                    <span>Aliada</span>
+                    <p>
+                        Uma das pessoas mais importantes
+                        na vida de Peter Parker.
+                    </p>
+                    <button onclick="mostrarPersonagem('MJ')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+            <div class="personagem">
+                <div class="icone">
+                    🎃
+                </div>
+                <div class="personagem-info">
+                    <h3>Duende Verde</h3>
+                    <span>Vilão</span>
+                    <p>
+                        Um dos principais inimigos do
+                        Homem-Aranha.
+                    </p>
+                    <button onclick="mostrarPersonagem('Duende')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+            <div class="personagem">
+                <div class="icone">
+                    👅
+                </div>
+                <div class="personagem-info">
+                    <h3>Venom</h3>
+                    <span>Anti-herói / Vilão</span>
+                    <p>
+                        Um personagem ligado ao simbionte
+                        que possui uma relação complexa
+                        com o Homem-Aranha.
+                    </p>
+                    <button onclick="mostrarPersonagem('Venom')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+            <div class="personagem">
+                <div class="icone">
+                    🐙
+                </div>
+                <div class="personagem-info">
+                    <h3>Doutor Octopus</h3>
+                    <span>Vilão</span>
+                    <p>
+                        Cientista brilhante que utiliza
+                        braços mecânicos em seus combates.
+                    </p>
+                    <button onclick="mostrarPersonagem('Octopus')">
+                        Ver detalhes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="poderes" class="secao">
+        <div class="titulo">
+            <span>03</span>
+            <h2>Poderes e habilidades</h2>
+        </div>
+        <p class="descricao">
+            As habilidades do Homem-Aranha permitem que ele
+            se movimente pela cidade e enfrente diversos inimigos.
+        </p>
+        <div class="poderes">
+            <div class="poder">
+                <div>🕸️</div>
+                <h3>Teias</h3>
+                <p>
+                    Utiliza teias para se movimentar,
+                    prender inimigos e criar diferentes
+                    estratégias.
+                </p>
+            </div>
+            <div class="poder">
+
+                <div>💪</div>
+
+                <h3>Superforça</h3>
+
+                <p>
+                    Possui força muito superior à de
+                    uma pessoa comum.
+                </p>
+
+            </div>
+
+
+            <div class="poder">
+                <div>🏃</div>
+                <h3>Agilidade</h3>
+                <p>
+                    Possui reflexos e velocidade
+                    extraordinários.
+                </p>
+            </div>
+            <div class="poder">
+                <div>⚠️</div>
+                <h3>Sentido-Aranha</h3>
+                <p>
+                    Uma habilidade que permite perceber
+                    perigos antes que eles aconteçam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="quiz" class="secao quiz">
+        <div class="titulo">
+            <span>04</span>
+            <h2>Quiz do Homem-Aranha</h2>
+        </div>
+        <p>
+            Teste seus conhecimentos sobre o herói!
+        </p>
+        <div class="pergunta">
+            <h3>
+                Qual é o nome verdadeiro do Homem-Aranha
+                mais conhecido?
+            </h3>
+            <button onclick="responder('Peter')">
+                Peter Parker
+            </button>
+            <button onclick="responder('Tony')">
+                Tony Stark
+            </button>
+            <button onclick="responder('Bruce')">
+                Bruce Wayne
+            </button>
+            <button onclick="responder('Steve')">
+                Steve Rogers
+            </button>
+            <p id="resultado"></p>
+        </div>
+    </section>
+    <footer>
+        <h2>🕷️ SPIDER-MAN</h2>
+        <p>
+            Um projeto desenvolvido com HTML, CSS e JavaScript.
+        </p>
+        <div class="links">
+            <a href="#inicio">Início</a>
+            <a href="#historia">História</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#poderes">Poderes</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+        <p class="copyright">
+            © 2026 - Projeto educacional
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
